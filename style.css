@@ -102,7 +102,7 @@ section {
 }
 
 .skills-logos img {
-    width: 50%;
+    width: 40%;
 }
 
 .skills-logos {
@@ -113,31 +113,38 @@ section {
     grid-template-areas:
       "HTML CSS JS"
       "jQuery React GIT";
+    margin-top: 120px;
 }
 
+.skills-logos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
 
 .HTML {
-    grid-area: HTML;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .CSS {
-    grid-area: CSS; 
+    grid-area: 1 / 2 / 2 / 3; 
 }
 
 .JS { 
-    grid-area: JS; 
+    grid-area: 1 / 3 / 2 / 4; 
 }
 
 .jQuery { 
-    grid-area: jQuery; 
+    grid-area: 2 / 1 / 3 / 2; 
 }
 
 .React { 
-    grid-area: React; 
+    grid-area: 2 / 2 / 3 / 3; 
 }
 
 .GIT { 
-    grid-area: GIT; 
+    grid-area: 2 / 3 / 3 / 4; 
 }
 
 .portfolio-item img {

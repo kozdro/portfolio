@@ -113,11 +113,12 @@ section {
     grid-template-areas:
       "HTML CSS JS"
       "jQuery React GIT";
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .skills-logos div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
@@ -145,6 +146,50 @@ section {
 
 .GIT { 
     grid-area: 2 / 3 / 3 / 4; 
+}
+
+.about-me {
+    height: 80vh;
+    background-color: var(--red);
+    margin-top: 20vh;
+    overflow: hidden;
+}
+
+.about-title {
+    position: relative;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    width: 300px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid var(--darkblue);
+}
+
+.about-title2 {
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 800px;
+    font-size: 26px;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: var(--mediumblue);
+    padding: 10px 15px;
+}
+
+.about-title2 p {
+    width: 500px;
+}
+
+.about-subtitle {
+    width: 800px;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 1.7;
 }
 
 .portfolio-item img {

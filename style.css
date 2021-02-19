@@ -17,9 +17,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     height: 10vh;
+    width: 100vw;
     border-bottom: 1px solid black;
-    background-color: var(--lightblue)
+    background-color: var(--lightlyblue);
+    overflow: hidden;
+    z-index: 999;
 }
 
 .logo {
@@ -27,6 +31,7 @@ header {
 }
 
 .nav {
+    margin-right: 30px;
     width: 50px;
     height: 50px;
     font-size: 26px;
@@ -34,16 +39,13 @@ header {
     border: none;
 }
 
-section {
-    height: 100vh;
-}
-
 .intro {
-    height: 70vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--red);
+    padding-top: 10vh;
 }
 
 .intro-wrap {
@@ -151,7 +153,6 @@ section {
 .about-me {
     height: 80vh;
     background-color: var(--red);
-    margin-top: 20vh;
     overflow: hidden;
 }
 
@@ -173,9 +174,12 @@ section {
     top: 15%;
     width: 800px;
     font-size: 26px;
-    font-family: 'Roboto Mono', sans-serif;
     background-color: var(--mediumblue);
     padding: 10px 15px;
+}
+
+.about-title2 p {
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .about-title2 p {
@@ -192,6 +196,89 @@ section {
     line-height: 1.7;
 }
 
-.portfolio-item img {
+.projects {
+    text-align: center;
+    background-color: var(--darkblue);
+}
+
+.projects-title {
+    position: relative;
+    color: black;
+    font-size: 48px;
+    text-align: center;
     width: 400px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid var(--red);
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.portfolio-item {
+    flex-basis: 25%;
+    margin: 0 30px 30px 30px;
+    position: relative;
+}
+
+.portfolio-item:hover {
+    background-color: var(--red);
+    overflow: hidden;
+}
+
+.portfolio-item-img {
+    max-width: 100%;
+    display: block;
+    transform: none;
+    transition: transform 0.7s;
+    opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-item-img {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.describe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.8s ease;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    line-height: 2.5;
+}
+
+.portfolio-item:hover .describe {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+    width: 110%;
+    height: 110%;
+}
+
+.describe a {
+    font-size: 24px;
+    color: black;
+    font-family: 'Roboto Mono', sans-serif;
+    text-decoration: none;
+}
+
+.describe i {
+    font-size: 24px;
 }

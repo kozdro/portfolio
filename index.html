@@ -146,9 +146,14 @@
     </section>
     <section class="contact">
         <h1 class="contact-title">Kontakt</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore temporibus voluptatem sit? Molestias
-            quaerat repellat aspernatur maiores expedita dolores tenetur, reprehenderit tempore nulla ab dicta nihil
-            libero vel id delectus.</p>
+        <div id="send_form_status"></div>
+        <form method="post" action="/send_form.php" id="contact_form">
+            <input type="text" placeholder="Imię i nazwisko/Nazwa firmy">
+            <input type="text" placeholder="E-mail">
+            <textarea name="message" id="message" class="formField" placeholder="Wiadomość"></textarea>
+            <button id="sendBtn">Wyślij</button>
+        </form>
+
     </section>
     <footer>&copy; Bartek Kozdrowiecki</footer>
 

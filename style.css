@@ -103,8 +103,10 @@ header {
     border-bottom: 3px solid var(--red);
 }
 
-.skills-logos img {
+.skills-img {
     width: 40%;
+    transition: transform 0.7s;
+    transform: none;
 }
 
 .skills-logos {
@@ -115,14 +117,14 @@ header {
     grid-template-areas:
       "HTML CSS JS"
       "jQuery React GIT";
-    margin-top: 100px;
 }
 
 .skills-logos div {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 30px 0;
 }
 
@@ -150,10 +152,38 @@ header {
     grid-area: 2 / 3 / 3 / 4; 
 }
 
+.skills-describe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    visibility: hidden;
+    transition: top 0.5s;
+}
+
+.skills-logos div:hover .skills-describe {
+    top: 50%;
+    visibility: visible;
+}
+
+.skills-logos div:hover .skills-img {
+    transform: scale(1.1);
+    opacity: 0.2;
+}
+
+.skills-describe p {
+    font-size: 18px;
+    color: var(--red);
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 700;
+}
+
 .about-me {
     height: 80vh;
     background-color: var(--red);
     overflow: hidden;
+    margin-top: -10px;
 }
 
 .about-title {
@@ -366,5 +396,4 @@ footer {
     text-align: center;
     line-height: 10vh;
     font-size: 20px;
-    font-family: 'Roboto Mono', sans-serif;
 }

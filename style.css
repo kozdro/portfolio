@@ -201,10 +201,9 @@ header {
 }
 
 .about-me {
-    height: 80vh;
+    min-height: 100vh;
     background-color: var(--red);
     overflow: hidden;
-    margin-top: -10px;
 }
 
 .about-title {
@@ -217,6 +216,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     border-bottom: 3px solid var(--darkblue);
+    margin-bottom: 80px;
 }
 
 .about-title2 {
@@ -231,20 +231,17 @@ header {
 
 .about-title2 p {
     font-family: 'Roboto Mono', sans-serif;
-}
-
-.about-title2 p {
     width: 500px;
 }
 
 .about-subtitle {
-    width: 800px;
+    width: 70%;
     position: relative;
-    top: 25%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.7;
+    margin-top: 40px;
 }
 
 .projects {

@@ -6,9 +6,9 @@ The website is under construction. I create this page in order to improve my ski
 
 ## Technologies
 Website is created with:
-*HTML
-*CSS
-*JavaScript
+* HTML
+* CSS
+* JavaScript
 
 ## Live
->>Soon<<
+Soon

@@ -37,6 +37,43 @@ header {
     font-size: 26px;
     background: none;
     border: none;
+    cursor: pointer;
+}
+
+.burger {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    right: -300px;
+    top: 10vh;
+    background-color: var(--lightlyblue);
+    transition: 0.3s;
+    z-index: 9999;
+}
+
+.active {
+    right: 0;
+}
+
+.burger ul {
+    display: flex;
+    font-size: 24px;
+    flex-direction: column;
+    list-style: none;
+    cursor: pointer;
+}
+
+.burger ul li {
+    padding: 30px 0;
+    border-bottom: 1px black solid;
+    width: 100%;
+    text-align: center;
+}
+
+.burger ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .intro {

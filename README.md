@@ -9,6 +9,7 @@ Website is created with:
 * HTML
 * CSS
 * JavaScript
+* jQuery
 
 ## Live
-Soon
+https://kozdro.github.io/portfolio/

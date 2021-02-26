@@ -123,7 +123,7 @@ header {
     right: -300px;
     top: 10vh;
     background-color: var(--lightlyblue);
-    transition: 0.3s;
+    transition: 0.6s;
     z-index: 9999;
 }
 

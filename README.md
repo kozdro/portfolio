@@ -11,4 +11,4 @@ Website is created with:
 * JavaScript
 
 ## Live
-Soon
+https://kozdro.github.io/portfolio/

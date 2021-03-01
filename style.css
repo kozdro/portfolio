@@ -18,16 +18,14 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     height: 10vh;
     width: 100vw;
     border-bottom: 1px solid black;
     background-color: var(--lightlyblue);
     overflow: hidden;
     z-index: 999;
-}
-
-.logo {
-    font-size: 10px;
 }
 
 .typewrite {
@@ -40,19 +38,10 @@ header {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 16px;
     font-weight: 500;
+    cursor: default;
 }
 
-.nav {
-    margin-right: 30px;
-    width: 50px;
-    height: 50px;
-    font-size: 26px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.hamburger .line{
+.hamburger .line {
     width: 40px;
     height: 3px;
     background-color: black;
@@ -61,20 +50,20 @@ header {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
+}
 
-#hamburger-11{
+#hamburger-11 {
     padding-right: 30px;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
+}
   
-  #hamburger-11.is-active{
+#hamburger-11.is-active {
     animation: smallbig 0.6s forwards;
-  }
+}
   
-  @keyframes smallbig{
+@keyframes smallbig {
     0%, 100%{
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -82,39 +71,39 @@ header {
       transform: scale(1);
     }
   
-    50%{
+    50% {
       -webkit-transform: scale(0);
       -ms-transform: scale(0);
       -o-transform: scale(0);
       transform: scale(0);
     }
-  }
+}
   
-  #hamburger-11.is-active .line:nth-child(1),
-  #hamburger-11.is-active .line:nth-child(2),
-  #hamburger-11.is-active .line:nth-child(3){
+#hamburger-11.is-active .line:nth-child(1),
+#hamburger-11.is-active .line:nth-child(2),
+#hamburger-11.is-active .line:nth-child(3) {
     -webkit-transition-delay: 0.2s;
     -o-transition-delay: 0.2s;
     transition-delay: 0.2s;
-  }
+}
   
-  #hamburger-11.is-active .line:nth-child(2){
+#hamburger-11.is-active .line:nth-child(2) {
     opacity: 0;
-  }
+}
   
-  #hamburger-11.is-active .line:nth-child(1){
+#hamburger-11.is-active .line:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(45deg);
     -ms-transform: translateY(10px) rotate(45deg);
     -o-transform: translateY(10px) rotate(45deg);
     transform: translateY(10px) rotate(45deg);
-  }
+}
   
-  #hamburger-11.is-active .line:nth-child(3){
+#hamburger-11.is-active .line:nth-child(3) {
     -webkit-transform: translateY(-13px) rotate(-45deg);
     -ms-transform: translateY(-13px) rotate(-45deg);
     -o-transform: translateY(-13px) rotate(-45deg);
     transform: translateY(-13px) rotate(-45deg);
-  }
+}
 
 .burger {
     height: 100%;
@@ -259,6 +248,7 @@ header {
     transition: top 0.8s ease;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 .skills-logos:hover .skills-describe {
@@ -473,4 +463,128 @@ footer {
     text-align: center;
     line-height: 10vh;
     font-size: 18px;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .typewrite > .wrap {
+        font-size: 12px;
+    }
+
+    .hamburger .line {
+        width: 30px;
+    }
+
+    #hamburger-11 {
+        padding-right: 10px;
+    }
+
+    .burger {
+        right: -400px;
+        width: 100%;
+    }
+
+    .intro {
+        height: 140vh;
+        flex-wrap: wrap;
+    }
+
+    .intro-wrap {
+        width: 100vw;
+        margin-top: -100px;
+    }
+
+    .intro-title {
+        font-size: 30px;
+        padding: 0 20px;
+    }
+
+    .intro-title span {
+        font-size: 32px;
+    }
+
+    .intro-subtitle {
+        width: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .background {
+        height: 120vh;
+    }
+
+    .skills-title {
+        top: 10px;
+        font-size: 40px;
+        width: 250px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .skills-img {
+        width: 100px;
+    }
+
+    .about-title {
+        font-size: 40px;
+        top: 10px;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .about-title2 {
+        font-size: 14px;
+        left: 0;
+        width: 100%;
+    }
+
+    .about-title2 p {
+        width: 100%;
+    }
+
+    .about-subtitle {
+        width: 80%;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+
+    .projects-title {
+        font-size: 40px;
+        top: 10px;
+        width: 300px;
+    }
+
+    .portfolio {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .contact {
+        height: 100vh;
+    }
+
+    .contact-title {
+        font-size: 40px;
+        top: 10px;
+        width: 200px;
+    }
+
+    .contact-subtitle {
+        width: 80%;
+        top: 5%;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .contact-info {
+        text-align: center;
+        height: 70%;
+    }
+
+    .contact-info ul {
+        font-size: 22px;
+        line-height: 1.5;
+    }
 }

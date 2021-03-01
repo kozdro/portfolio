@@ -465,9 +465,9 @@ footer {
     font-size: 18px;
 }
 
-@media (max-width: 414px) and (orientation: portrait) {
+@media (orientation: portrait) {
     .typewrite > .wrap {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .hamburger .line {
@@ -485,16 +485,6 @@ footer {
     .active {
         right: 0;
         width: 100%;
-    }
-
-    .intro {
-        height: 140vh;
-        flex-wrap: wrap;
-    }
-
-    .intro-wrap {
-        width: 100vw;
-        margin-top: -100px;
     }
 
     .intro-title {
@@ -526,10 +516,6 @@ footer {
         flex-direction: row;
     }
 
-    .skills-img {
-        width: 100px;
-    }
-
     .about-title {
         font-size: 40px;
         top: 10px;
@@ -538,7 +524,6 @@ footer {
     }
 
     .about-title2 {
-        font-size: 14px;
         left: 0;
         width: 100%;
     }
@@ -582,13 +567,62 @@ footer {
         line-height: 1.2;
     }
 
+    .contact-info ul {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 320px) {
+    .intro {
+        height: 140vh;
+        flex-wrap: wrap;
+    }
+
+    .intro-wrap {
+        width: 100vw;
+        margin-top: -100px;
+    }
+
+    .skills-img {
+        width: 100px;
+    }
+
+    .about-title2 {
+        font-size: 14px;
+    }
+
     .contact-info {
         text-align: center;
         height: 70%;
     }
+}
 
-    .contact-info ul {
-        font-size: 22px;
-        line-height: 1.5;
+@media (min-width: 321px) and (max-width: 414px) {
+    .intro {
+        height: 110vh;
+        flex-wrap: wrap;
+    }
+
+    .intro-wrap {
+        width: 100vw;
+        margin: 50px 0;
+    }
+
+    .skills-img {
+        width: 120px;
+    }
+
+    .about-title2 {
+        font-size: 16px;
+    }
+
+    .contact {
+        height: 80vh;
+    }
+    
+    .contact-info {
+        text-align: center;
+        height: 60%;
     }
 }

@@ -6,6 +6,10 @@ navBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 })
 
+navMenu.addEventListener('click', () => {
+    navMenu.classList.remove('active')
+})
+
 $(document).ready(function(){
     $(".hamburger").click(function(){
       $(this).toggleClass("is-active");

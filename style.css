@@ -480,6 +480,10 @@ footer {
 
     .burger {
         right: -400px;
+    }
+
+    .active {
+        right: 0;
         width: 100%;
     }
 

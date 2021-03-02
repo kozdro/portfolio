@@ -642,7 +642,7 @@ footer {
 
 @media (width: 375px) {
     .intro {
-        height: 100vh;
+        height: 110vh;
     }
 
     .intro-wrap {
@@ -840,3 +840,304 @@ footer {
         font-size: 24px;
     }
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .burger ul li {
+        padding: 20px 0;
+    }
+
+    .hamburger .line {
+        width: 30px;
+    }
+
+    #hamburger-11 {
+        padding-right: 10px;
+    }
+
+    .burger {
+        right: -400px;
+    }
+
+    .active {
+        right: 0;
+        width: 100%;
+    }
+
+    .intro {
+        height: 150vh;
+    }
+
+    .intro-img {
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .intro-title {
+        font-size: 30px;
+        padding: 0 20px;
+    }
+
+    .intro-title span {
+        font-size: 32px;
+    }
+
+    .intro-subtitle {
+        width: 45%;
+        position: absolute;
+        right: 0;
+        top: 110%;
+        font-size: 18px;
+    }
+
+    .background {
+        height: 150vh;
+    }
+
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .skills-logos {
+        flex-basis: 10%;
+    }
+
+    .skills-img {
+        width: 100px;
+    }
+
+    .skills-title {
+        top: 10px;
+        font-size: 30px;
+        width: 200px;
+    }
+
+    .about-title {
+        font-size: 30px;
+        top: 10px;
+        width: 150px;
+        margin-bottom: 40px;
+    }
+
+    .about-title2 {
+        left: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .about-title2 p {
+        width: 100%;
+    }
+
+    .about-subtitle {
+        width: 80%;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+
+    .projects-title {
+        font-size: 30px;
+        top: 10px;
+        width: 250px;
+    }
+
+    .portfolio {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .contact {
+        height: 100vh;
+    }
+
+    .contact-title {
+        font-size: 40px;
+        top: 10px;
+        width: 200px;
+    }
+
+    .contact-subtitle {
+        width: 80%;
+        top: 5%;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .contact-info ul {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    footer {
+        margin-top: 10vh;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 799px) and (orientation: landscape) {
+    .wrapper {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) and (orientation: landscape) {
+    .burger {
+        width: 30%;
+    }
+
+    .intro {
+        flex-direction: row;
+        height: 150vh;
+    }
+
+    .intro-wrap {
+        width: 50vw;
+    }
+
+    .intro-img {
+        width: 300px;
+    }
+
+    .about-title2 {
+        width: 60%;
+    }
+
+    .portfolio {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+    .hamburger .line {
+        width: 50px;
+    }
+
+    .intro {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .intro-wrap {
+        width: 100vw;
+    }
+
+    .intro-img {
+        width: 400px;
+    }
+
+    .intro-title {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .intro-title span {
+        font-size: 44px;
+    }
+
+    .intro-subtitle {
+        font-size: 24px;
+    }
+
+    .skills-title {
+        font-size: 44px;
+        width: 300px;
+    }
+
+    .background {
+        height: 100vh;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .skills-img {
+        width: 200px;
+    }
+
+    .about-title {
+        font-size: 44px;
+        width: 200px;
+    }
+
+    .about-title2 {
+        width: 70%;
+        font-size: 30px;
+    }
+
+    .about-subtitle {
+        font-size: 28px;
+    }
+
+    .projects-title {
+        font-size: 44px;
+        width: 350px;
+    }
+
+    .contact {
+        height: 70vh;
+    }
+
+    .contact-title {
+        font-size: 44px;
+    }
+
+    .contact-subtitle {
+        font-size: 30px;
+    }
+
+    .contact-info ul {
+        font-size: 34px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1439px) and (height: 1024px) {
+    .burger {
+        right: -420px;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .intro-img {
+        width: 500px;
+    }
+
+    .intro-wrap {
+        width: 60vw;
+    }
+
+    .intro-subtitle {
+        top: 70%;
+        width: 50%;
+    }
+
+    .background {
+        height: 120vh;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .skills-logos {
+        flex-basis: 25%;
+    }
+
+    .skills-img {
+        width: 280px;
+    }
+
+    .about-me {
+        margin-bottom: -200px;
+    }
+
+    .contact-subtitle {
+        width: 70%;
+    }
+} 

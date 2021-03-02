@@ -72,5 +72,5 @@ window.onload = function() {
 };
 
 document.body.addEventListener('click', () => {
-    skillsDescribe.classList.remove('active')
-})
+    skillsDescribe.classList.remove('active');
+});

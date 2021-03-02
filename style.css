@@ -6,11 +6,11 @@
 }
 
 :root {
-    --red: #FC4445;
-    --lightblue: #3FEEE6;
-    --mediumblue: #97CAEF;
-    --darkblue: #55BCC9;
-    --lightlyblue: #CAFAFE;
+    --first-color: #fefcfb;
+    --second-color: #1282a2;
+    --third-color: #034078;
+    --fourth-color: #001f54;
+    --fifth-color: #0a1128;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
     height: 10vh;
     width: 100vw;
     border-bottom: 1px solid black;
-    background-color: var(--lightlyblue);
+    background-color: var(--first-color);
     overflow: hidden;
     z-index: 999;
 }
@@ -33,8 +33,8 @@ header {
 }
 
 .typewrite > .wrap {
-    border-right: 0.08em solid var(--red);
-    color: black;
+    border-right: 0.08em solid var(--third-color);
+    color: var(--third-color);
     font-family: 'Roboto Mono', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -44,7 +44,7 @@ header {
 .hamburger .line {
     width: 40px;
     height: 3px;
-    background-color: black;
+    background-color: var(--third-color);
     display: block;
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -111,7 +111,7 @@ header {
     position: fixed;
     right: -300px;
     top: 10vh;
-    background-color: var(--lightlyblue);
+    background-color: var(--third-color);
     transition: 0.6s;
     z-index: 9999;
 }
@@ -130,7 +130,7 @@ header {
 
 .burger ul li {
     padding: 30px 0;
-    border-bottom: 1px black solid;
+    border-bottom: 1px var(--fifth-color) solid;
     width: 100%;
     text-align: center;
 }
@@ -141,7 +141,7 @@ header {
 
 .burger ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--fifth-color);
     font-family: 'Roboto Mono', sans-serif;
 }
 
@@ -150,7 +150,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--red);
+    background-color: var(--first-color);
     padding-top: 10vh;
 }
 
@@ -163,7 +163,7 @@ header {
 .intro-img {
     width: 300px;
     border-radius: 10px;
-    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 1em var(--second-color);
 }
 
 .intro-title {
@@ -172,12 +172,14 @@ header {
     font-weight: 400;
     margin-bottom: 100px;
     width: 100%;
+    color: var(--fifth-color)
 }
 
 .intro-title span {
     font-weight: 700;
     font-size: 44px;
     line-height: 1.5;
+    color: var(--second-color)
 }
 
 .intro-subtitle {
@@ -185,10 +187,11 @@ header {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 20px;
     align-self: flex-end;
-    border-bottom: 15px solid var(--lightblue);
+    border-bottom: 15px solid var(--second-color);
     text-align: center;
     position: relative;
     right: 200px;
+    color: var(--fifth-color)
 }
 
 .background {
@@ -199,14 +202,14 @@ header {
 
 .skills-title {
     position: relative;
-    color: var(--darkblue);
+    color: var(--first-color);
     font-size: 48px;
     text-align: center;
     width: 300px;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 3px solid var(--red);
+    border-bottom: 3px solid var(--second-color);
 }
 
 .wrapper {
@@ -261,32 +264,32 @@ header {
 
 .skills-logos:hover .skills-img {
     transform: scale(1.1);
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 .skills-describe p {
-    color: var(--red);
+    color: var(--first-color);
     font-family: 'Roboto Mono', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 .about-me {
     min-height: 100vh;
-    background-color: var(--red);
+    background-color: var(--first-color);
     overflow: hidden;
 }
 
 .about-title {
     position: relative;
-    color: black;
+    color: var(--third-color);
     font-size: 48px;
     text-align: center;
     width: 300px;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 3px solid var(--darkblue);
+    border-bottom: 3px solid var(--fourth-color);
     margin-bottom: 80px;
 }
 
@@ -296,13 +299,14 @@ header {
     top: 15%;
     width: 800px;
     font-size: 26px;
-    background-color: var(--mediumblue);
+    background-color: var(--third-color);
     padding: 10px 15px;
 }
 
 .about-title2 p {
     font-family: 'Roboto Mono', sans-serif;
     width: 500px;
+    color: var(--fifth-color)
 }
 
 .about-subtitle {
@@ -313,23 +317,24 @@ header {
     font-size: 22px;
     line-height: 1.7;
     margin-top: 40px;
+    color: var(--fifth-color)
 }
 
 .projects {
     text-align: center;
-    background-color: var(--darkblue);
+    background-color: var(--second-color);
 }
 
 .projects-title {
     position: relative;
-    color: black;
+    color: var(--first-color);
     font-size: 48px;
     text-align: center;
     width: 400px;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 3px solid var(--red);
+    border-bottom: 3px solid var(--fourth-color);
 }
 
 .portfolio {
@@ -348,7 +353,7 @@ header {
 }
 
 .portfolio-item:hover {
-    background-color: var(--red);
+    background-color: var(--fifth-color);
     overflow: hidden;
 }
 
@@ -381,6 +386,7 @@ header {
     height: 100%;
     background-color: none;
     line-height: 2.5;
+    color: var(--first-color);
 }
 
 .portfolio-item:hover .describe {
@@ -393,7 +399,7 @@ header {
 
 .describe a {
     font-size: 24px;
-    color: black;
+    color: var(--first-color);
     font-family: 'Roboto Mono', sans-serif;
     text-decoration: none;
 }
@@ -405,19 +411,19 @@ header {
 .contact {
     height: 80vh;
     width: 100%;
-    background-color: var(--red);
+    background-color: var(--first-color);
 }
 
 .contact-title {
     position: relative;
-    color: black;
+    color: var(--third-color);
     font-size: 48px;
     text-align: center;
     width: 300px;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 3px solid var(--darkblue);
+    border-bottom: 3px solid var(--fourth-color);
 }
 
 .contact-subtitle {
@@ -430,6 +436,7 @@ header {
     line-height: 1.7;
     margin-bottom: 20px;
     font-weight: normal;
+    color: var(--fifth-color)
 }
 
 .contact-info {
@@ -438,6 +445,7 @@ header {
     align-items: center;
     width: 100%;
     height: 80%;
+    color: var(--fifth-color)
 }
 
 .contact-info ul {
@@ -453,16 +461,17 @@ header {
 .contact-info ul li a, .tel {
     text-decoration: none;
     font-family: 'Roboto Mono', sans-serif;
-    color: var(--lightlyblue);
+    color: var(--second-color);
 }
 
 footer {
     width: 100%;
     height: 10vh;
-    background-color: var(--darkblue);
+    background-color: var(--second-color);
     text-align: center;
     line-height: 10vh;
     font-size: 18px;
+    color: var(--fifth-color);
 }
 
 @media (orientation: portrait) {
@@ -626,3 +635,7 @@ footer {
         height: 60%;
     }
 }
+
+/* @media (width: 375px) {
+
+} */

@@ -1,14 +1,16 @@
 const navBtn = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.burger');
+const hamburger = document.querySelector('.hamburger');
 
 
 navBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-})
+});
 
 navMenu.addEventListener('click', () => {
-    navMenu.classList.remove('active')
-})
+    navMenu.classList.remove('active');
+    hamburger.classList.remove('is-active');
+});
 
 $(document).ready(function(){
     $(".hamburger").click(function(){

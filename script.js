@@ -1,6 +1,7 @@
 const navBtn = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.burger');
 const hamburger = document.querySelector('.hamburger');
+const skillsDescribe = document.querySelector('.skills-describe')
 
 
 navBtn.addEventListener('click', () => {
@@ -69,3 +70,7 @@ window.onload = function() {
         }
     }
 };
+
+document.body.addEventListener('click', () => {
+    skillsDescribe.classList.remove('active')
+})

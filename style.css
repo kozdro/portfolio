@@ -1141,3 +1141,21 @@ footer {
         width: 70%;
     }
 } 
+
+@media (min-width: 1900px) {
+    .intro-img {
+        width: 400px;
+    }
+
+    .skills-img {
+        width: 300px;
+    }
+
+    .about-title2 {
+        width: 1000px;
+    }
+
+    .about-subtitle {
+        width: 60%;
+    }
+}

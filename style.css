@@ -235,7 +235,7 @@ header {
 
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -244,13 +244,16 @@ header {
 
 .skills-logos {
     flex-basis: 25%;
-    margin: 0 30px 30px 30px;
+    margin: 0 30px 100px 30px;
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills-img {
-    max-width: 100%;
+    max-width: 60%;
     display: block;
     transform: none;
     transition: transform 0.7s;

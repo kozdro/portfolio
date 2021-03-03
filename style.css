@@ -495,8 +495,9 @@ footer {
 
 @media (min-width: 320px) and (max-width: 480px) {
     section {
-        padding: 5em 0;
+        padding: 2em 0;
     }
+
     header {
         height: 7%;
     }
@@ -514,12 +515,18 @@ footer {
     }
 
     .nav {
-        right: -400px;
+        right: -500px;
         width: 100%;
+        top: 7%;
+    }
+
+    .active {
+        right: 0;
     }
 
     .intro {
         flex-direction: column;
+        padding-top: 5em;
     }
 
     .intro-wrap {

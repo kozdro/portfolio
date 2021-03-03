@@ -37,14 +37,12 @@ img {
     padding: 0.25em 1em;
 }
 
-
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    height: 10vh;
+    height: 10%;
     width: 100vw;
     border-bottom: 1px solid var(--fifth-color);
     background-color: var(--first-color);
@@ -169,7 +167,6 @@ header {
 }
 
 .intro {
-    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +177,6 @@ header {
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 50%;
     padding: 0 2%;
 }
 
@@ -188,7 +184,6 @@ header {
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 1em var(--second-color);
-    margin-top: 10%;
 }
 
 .intro-title {
@@ -240,22 +235,22 @@ header {
 
 .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 100vh;
+    margin-top: 5%;
 }
 
 .skills-logos {
     flex-basis: 25%;
-    margin: 0 0 5% 0;
+    margin: 0 30px 30px 30px;
     position: relative;
     cursor: pointer;
 }
 
 .skills-img {
-    width: 200px;
+    max-width: 100%;
     display: block;
     transform: none;
     transition: transform 0.7s;

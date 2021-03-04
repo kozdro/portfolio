@@ -771,7 +771,7 @@ footer {
 
     .intro {
         flex-direction: column;
-        padding-top: 10em;
+        padding-top: 12em;
     }
 
     .intro-wrap {
@@ -780,7 +780,7 @@ footer {
     }
 
     .intro-img {
-        max-width: 70%;
+        max-width: 40%;
     }
 
     .intro-title span, .skills-title, .about-title, .projects-title, .contact-title {

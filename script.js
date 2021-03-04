@@ -82,5 +82,13 @@ tl.fromTo(".intro-img", { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo(".intro-title", { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo(".intro-subtitle", { opacity: 0 }, { opacity: 1, duration: 1 });
 
-
 gsap.registerPlugin(ScrollTrigger);
+
+const sections = document.querySelectorAll('section:not(.intro)');
+
+sections.forEach(section => {
+    gsap.fromTo(section.children, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'easeInOut', scrollTrigger: {
+    trigger: section,
+    start: 'top 20%',
+  }});
+});

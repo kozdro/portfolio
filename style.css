@@ -128,7 +128,7 @@ header {
 
 .nav {
     height: 100%;
-    width: 15%;
+    width: 20%;
     position: fixed;
     right: -1000px;
     top: 10vh;
@@ -162,7 +162,7 @@ header {
 
 .nav ul li a {
     text-decoration: none;
-    color: var(--fifth-color);
+    color: var(--first-color);
     font-family: 'Roboto Mono', sans-serif;
 }
 
@@ -309,7 +309,7 @@ header {
 }
 
 .about-title {
-    color: var(--third-color);
+    color: var(--second-color);
     font-size: 48px;
     text-align: center;
 }
@@ -320,21 +320,21 @@ header {
     width: 250px;
     height: 3px;
     margin: 0 auto 30px;
-    background: var(--fourth-color);
+    background: var(--fifth-color);
 }
 
 .about-title2 {
     position: relative;
     left: 30%;
     font-size: 26px;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     padding: 10px 15px;
 }
 
 .about-title2 p {
     font-family: 'Roboto Mono', sans-serif;
     width: 600px;
-    color: var(--fifth-color)
+    color: var(--fifth-color);
 }
 
 .about-subtitle {
@@ -342,6 +342,7 @@ header {
     line-height: 1.7;
     color: var(--fifth-color);
     padding-top: 50px;
+    text-align: justify;
 }
 
 .projects {
@@ -440,7 +441,7 @@ header {
 }
 
 .contact-title {
-    color: var(--third-color);
+    color: var(--second-color);
     font-size: 48px;
 }
 
@@ -450,7 +451,7 @@ header {
     width: 250px;
     height: 3px;
     margin: 0 auto;
-    background: var(--fourth-color);
+    background: var(--fifth-color);
 }
 
 .contact-subtitle {

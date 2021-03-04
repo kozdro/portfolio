@@ -604,7 +604,96 @@ footer {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+   section {
+       padding: 2em 0;
+   }
 
+   header {
+       height: 8%;
+   }
+
+   #hamburger-11 {
+        padding-right: 15px;
+    }
+
+    .nav {
+        right: -800px;
+        width: 100%;
+        top: 7%;
+    }
+
+    .active {
+        right: 0;
+    }
+
+   .intro {
+       flex-direction: column;
+       padding-top: 5em;
+   }
+
+   .intro-wrap {
+       width: 100%;
+       padding: 0 10px;
+   }
+
+   .intro-title span, .skills-title, .about-title, .projects-title, .contact-title {
+        font-size: 38px;
+    }
+
+    .intro-title {
+        width: 100%;
+        font-size: 34px;
+        margin-bottom: 50px;
+    }
+
+    .intro-subtitle {
+        width: 100%;
+    }
+
+    .skills-title::after {
+        width: 250px;
+    }
+
+    .wrapper {
+        margin-top: 10%;
+    }
+
+    .skills-logos {
+        margin: 0 30px 30px 30px;
+    }
+
+    .skills-img {
+        max-width: 100%;
+    }
+
+    .about-title::after {
+        width: 200px;
+    }
+
+    .about-subtitle, .contact-subtitle {
+        font-size: 22px;
+    }
+
+    .about-title2 {
+        left: 0;
+        font-size: 24px;
+    }
+
+    .projects-title::after {
+        width: 300px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .contact-title::after {
+        width: 200px;
+    }
+
+    .contact-info ul {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -612,13 +701,122 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    section {
+        padding: 2em 0;
+    }
 
+    .typewrite > .wrap {
+        font-size: 18px;
+    }
+
+    .hamburger .line {
+        width: 50px;
+    }
+
+    .nav {
+        right: -1100px;
+        width: 100%;
+        top: 10%;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .nav ul {
+        font-size: 34px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding-top: 10em;
+    }
+
+    .intro-wrap {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .intro-img {
+        max-width: 70%;
+    }
+
+    .intro-title span, .skills-title, .about-title, .projects-title, .contact-title {
+        font-size: 48px;
+    }
+
+    .intro-title {
+        width: 100%;
+        font-size: 42px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .intro-subtitle {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .wrapper {
+        margin-top: 10%;
+    }
+
+    .skills-logos {
+        flex-basis: 30%;
+        margin: 0 50px 30px 50px;
+    }
+
+    .skills-img {
+        max-width: 100%;
+    }
+
+    .skills-describe p {
+        font-size: 26px;
+    }
+
+    .about-subtitle, .contact-subtitle {
+        font-size: 32px;
+    }
+
+    .about-title2 {
+        width: 80%;
+        left: 0;
+        font-size: 30px;
+    }
+
+    .about-title2 p {
+        width: 100%;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .describe a, .describe i {
+        font-size: 38px;
+    }
+
+    .contact-info ul {
+        font-size: 36px;
+    }
+
+    footer {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .nav {
+        width: 20%;
+    }
 
+    .intro {
+        padding-top: 8em;
+    }
 }
 
 @media (min-width: 1281px) {
-
+    .intro {
+        padding-top: 8em;
+    }
 }

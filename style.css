@@ -539,16 +539,6 @@ footer {
     display: none;
 }
 
-@media (max-width: 1023px) and (orientation: landscape) {
-    section, footer {
-        display: none;
-    }
-
-    .warning-message {
-        display: block;
-    }
-}
-
 @media (min-width: 320px) and (max-width: 480px) {
     section {
         padding: 2em 0;
@@ -883,5 +873,22 @@ footer {
 
     .contact-info {
         padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 1023px) and (orientation: landscape) {
+    header, section, footer, .intro {
+        display: none;
+    }
+
+    .warning-message {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: var(--fifth-color);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

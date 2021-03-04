@@ -74,3 +74,13 @@ window.onload = function() {
 document.body.addEventListener('click', () => {
     skillsDescribe.classList.remove('active');
 });
+
+
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.fromTo(".intro-img", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".intro-title", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".intro-subtitle", { opacity: 0 }, { opacity: 1, duration: 1 });
+
+
+gsap.registerPlugin(ScrollTrigger);

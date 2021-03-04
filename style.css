@@ -535,6 +535,20 @@ footer {
     z-index: 999999;
 }
 
+.warning-message {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    section, footer {
+        display: none;
+    }
+
+    .warning-message {
+        display: block;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     section {
         padding: 2em 0;
@@ -736,10 +750,6 @@ footer {
     .contact-info ul {
         font-size: 24px;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

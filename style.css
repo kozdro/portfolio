@@ -877,7 +877,7 @@ footer {
 }
 
 @media (max-width: 1023px) and (orientation: landscape) {
-    header, section, footer, .intro {
+    header, section, footer, .intro, .intro-slider, .slider {
         display: none;
     }
 

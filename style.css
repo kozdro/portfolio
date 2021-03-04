@@ -859,7 +859,12 @@ footer {
 
 @media (min-width: 1281px) {
     .intro {
-        padding-top: 8em;
+        padding-top: 15em;
+        padding-bottom: 10em;
+    }
+
+    .intro-img {
+        max-width: 400px;
     }
 
     .contact-subtitle {

@@ -861,4 +861,12 @@ footer {
     .intro {
         padding-top: 8em;
     }
+
+    .contact-subtitle {
+        padding: 40px 0 100px 0;
+    }
+
+    .contact-info {
+        padding-bottom: 80px;
+    }
 }
